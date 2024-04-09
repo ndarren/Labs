@@ -1,3 +1,31 @@
 <!DOCTYPE html>
 
+<body>
+    <canvas id="tictactoe" width="600" height="600"
+        style="margin: 20;border: 2px solid black;background: url(https://media.istockphoto.com/id/157399234/photo/dripping-condensation.jpg?s=612x612&w=0&k=20&c=dt0KvSXmsZofbHehz1VOK7SM0rfJ4_Snb1Jt6iUqVhg=);"></canvas>
+</body>
+<script>
+    var canvas = document.getElementById("tictactoe");
+    var imgObj = new Image();
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(200, 10);
+    ctx.lineTo(200, 590);
+    ctx.moveTo(400, 10);
+    ctx.lineTo(400, 590);
+    ctx.moveTo(10, 200);
+    ctx.lineTo(590, 200);
+    ctx.moveTo(10, 400);
+    ctx.lineTo(590, 400);
+    ctx.moveTo(175, 100);
+    ctx.arc(100, 100, 75, 0, 2 * Math.PI);
+    ctx.moveTo(210, 210);
+    ctx.lineTo(390, 390);
+    ctx.moveTo(390, 210);
+    ctx.lineTo(210, 390);
+    ctx.moveTo(575, 500);
+    ctx.arc(500, 500, 75, 0, 2 * Math.PI);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+</script>
+
 </html>
