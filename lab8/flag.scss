@@ -1,0 +1,39 @@
+$flag-scale: 10;
+
+.stripes {
+    height: 40px *$flag-scale;
+    width: 592.8px *$flag-scale;
+}
+
+.red_stripe {
+    background-color: #bb133e;
+}
+
+.white_stripe {
+    background-color: white;
+}
+
+#stars {
+    color: white;
+    padding-left: 7px *$flag-scale;
+    font-size: 20px *$flag-scale;
+}
+
+#star td {
+    padding-left: 6px *$flag-scale;
+    padding-right: 6px *$flag-scale;
+}
+
+#starcell {
+    background-color: #002147;
+    height: 280px *$flag-scale;
+    width: 30px *$flag-scale;
+}
+
+#flag {
+    border-spacing: 0px;
+}
+
+#flag_frame {
+    padding: 25px *$flag-scale;
+}

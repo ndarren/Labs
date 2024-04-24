@@ -1,0 +1,85 @@
+table,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.rgba1 {
+    background-color: rgba(40, 73, 128, 1);
+}
+
+.rgba2 {
+    background-color: rgba(40, 73, 128, 0.9);
+}
+
+.rgba3 {
+    background-color: rgba(40, 73, 128, 0.8);
+}
+
+.rgba4 {
+    background-color: rgba(40, 73, 128, 0.7);
+}
+
+.rgba5 {
+    background-color: rgba(40, 73, 128, 0.6);
+}
+
+.rgba6 {
+    background-color: rgba(40, 73, 128, 0.5);
+}
+
+.rgba7 {
+    background-color: rgba(40, 73, 128, 0.4);
+}
+
+.rgba8 {
+    background-color: rgba(40, 73, 128, 0.3);
+}
+
+.rgba9 {
+    background-color: rgba(40, 73, 128, 0.2);
+}
+
+.rgba10 {
+    background-color: rgba(40, 73, 128, 0.1);
+}
+
+.hsl1 {
+    background-color: hsla(218, 52%, 33%, 1);
+}
+
+.hsl2 {
+    background-color: hsla(218, 52%, 33%, 0.9);
+}
+
+.hsl3 {
+    background-color: hsla(218, 52%, 33%, 0.8);
+}
+
+.hsl4 {
+    background-color: hsla(218, 52%, 33%, 0.7);
+}
+
+.hsl5 {
+    background-color: hsla(218, 52%, 33%, 0.6);
+}
+
+.hsl6 {
+    background-color: hsla(218, 52%, 33%, 0.5);
+}
+
+.hsl7 {
+    background-color: hsla(218, 52%, 33%, 0.4);
+}
+
+.hsl8 {
+    background-color: hsla(218, 52%, 33%, 0.3);
+}
+
+.hsl9 {
+    background-color: hsla(218, 52%, 33%, 0.2);
+}
+
+.hsl10 {
+    background-color: hsla(218, 52%, 33%, 0.1);
+}

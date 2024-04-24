@@ -1,0 +1,37 @@
+.stripes {
+  height: 400px;
+  width: 5928px;
+}
+
+.red_stripe {
+  background-color: #bb133e;
+}
+
+.white_stripe {
+  background-color: white;
+}
+
+#stars {
+  color: white;
+  padding-left: 70px;
+  font-size: 200px;
+}
+
+#star td {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#starcell {
+  background-color: #002147;
+  height: 2800px;
+  width: 300px;
+}
+
+#flag {
+  border-spacing: 0px;
+}
+
+#flag_frame {
+  padding: 250px;
+}/*# sourceMappingURL=flag.css.map */
