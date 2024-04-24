@@ -1,6 +1,6 @@
 .stripes {
-  height: 400px;
-  width: 5928px;
+  height: 40px;
+  width: 592.8px;
 }
 
 .red_stripe {
@@ -13,19 +13,19 @@
 
 #stars {
   color: white;
-  padding-left: 70px;
-  font-size: 200px;
+  padding-left: 7px;
+  font-size: 20px;
 }
 
 #star td {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 #starcell {
   background-color: #002147;
-  height: 2800px;
-  width: 300px;
+  height: 280px;
+  width: 30px;
 }
 
 #flag {
@@ -33,5 +33,5 @@
 }
 
 #flag_frame {
-  padding: 250px;
+  padding: 25px;
 }/*# sourceMappingURL=flag.css.map */
