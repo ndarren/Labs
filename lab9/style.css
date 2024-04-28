@@ -11,7 +11,12 @@
 	Hint:  Suggested fonts --> Ubuntu, adobe-garamond-pro 
 */
 body {
-
+	border: 100px solid rgba(51, 0, 111, 0.6);
+	color: #505050;
+	width: 800px;
+	padding: 20px;
+	margin: 30px auto;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -20,7 +25,7 @@ body {
     Set all paragraph font size to 1.2em of the root container
 */
 p {
-
+	font-size: 1.2em;
 }
 
 
@@ -35,8 +40,10 @@ p {
 	Hint:  Use special type of background-image --> linear-gradient 
 */
 hr {
-    border: 0;
-  
+
+	border: 2px solid;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+
 }
 
 
@@ -47,9 +54,7 @@ hr {
 		- oblique font style 
 		- smaller font size of 0.8em 
 */
-.citation {
-
-}
+.citation {}
 
 
 
@@ -60,9 +65,7 @@ hr {
 
 	Hint:  Use vertical-align: super 
 */
-.footnote {
-
-}
+.footnote {}
 
 
 
@@ -71,18 +74,14 @@ hr {
 
 	Hint:  text-align applies not only to text but all objects in the box
 */
-.headpic {
-
-}
+.headpic {}
 
 
 
 /* TASK G:  Size heading picture
     Make the head picture image 90% of the container width 
 */
-.headpic img {
-
-}
+.headpic img {}
 
 
 
@@ -91,9 +90,7 @@ hr {
 		- letters spaced by 0.15em 
 		- text size reduced to 0.8em 
 */
-.headpic figcaption {
-
-}
+.headpic figcaption {}
 
 
 
@@ -103,9 +100,7 @@ hr {
 		- the same color as the background --> rgba(r,g,b, 0.6) 
 		- offset the paragraph from the left by 8 pixels using padding-left 
 */
-p.intro {
-
-}
+p.intro {}
 
 
 
@@ -115,9 +110,7 @@ p.intro {
 		- 2.5 times the size of the normal <h1> by referencing the root size
 		- remove all extraneous margin using margin: 0 auto
 */
-h1 {
-
-}
+h1 {}
 
 
 
@@ -126,9 +119,8 @@ h1 {
 		- use text-transform to capitalize them
 		- make them the same color as the lavender theme color 10% darker (i.e. alpha= 0.6 + 0.1)
 */
-h1, h2 {
-
-}
+h1,
+h2 {}
 
 
 
@@ -138,9 +130,7 @@ h1, h2 {
 		- same color as the h1 text 
 		- bold 
 */
-#para1::first-letter {
-
-}
+#para1::first-letter {}
 
 
 
@@ -155,9 +145,7 @@ h1, h2 {
 	Hint: use margin-left: auto and margin-right: auto as a CSS trick for 
 	centering
 */
-table.swatches {
-
-}
+table.swatches {}
 
 
 
@@ -167,9 +155,7 @@ table.swatches {
 		- center align all text in these table cells
 		- have a lightgray border of 2px around all swatch cells **except** for the color swatches 
 */
-table.swatches td {
-
-}
+table.swatches td {}
 
 
 
@@ -181,9 +167,7 @@ table.swatches td {
 
 	Hint: use text-transform and letter-spacing 
 */
-tr:first-child {
-
-}
+tr:first-child {}
 
 
 
@@ -195,21 +179,13 @@ tr:first-child {
 		#4b2e83 
 	* Set the text color to lightgray, **except** for the first cell, which should be black 
 */
-#lav1 {
+#lav1 {}
 
-}
+#lav2 {}
 
-#lav2 {
+#lav3 {}
 
-}
-
-#lav3 {
-
-}
-
-#lav4 {
-
-}
+#lav4 {}
 
 
 
@@ -221,8 +197,8 @@ tr:first-child {
 	Hint: temporarily turn on a border to see where the photos container is
 */
 .photos {
-    text-align: center;
-    /* border: 1px solid black; */
+	text-align: center;
+	/* border: 1px solid black; */
 }
 
 
@@ -232,15 +208,11 @@ tr:first-child {
 
 	Hint: one HTML table cell has been designed to enclose the whole grid, but use width of 30% and margin of 1.3% for the images to "float" them into a 3 picture wide grid 
 */
-.photos img {
-
-}
+.photos img {}
 
 
 
 /* TASK S:  Style photo gallery border
     Wrap a thin lightgray border around the photo gallery 
 */
-table#photos {
-
-}
+table#photos {}
