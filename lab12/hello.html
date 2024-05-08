@@ -2,17 +2,21 @@
 
 <head>
     <script src="javascript/hello.js"></script>
+    <link rel="stylesheet" href="css/hello.css">
 </head>
 
 <body>
     <h1>Hello!</h1>
-    <form id="loginForm">
-        <label for="username">Username: </label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <button type="button" onclick="displayLogin()">Submit</button>
-    </form>
+    <div>
+        <form id="loginForm">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="button" onclick="displayLogin()">Submit</button>
+        </form>
+    </div>
+
 
     <div id="displayInfo">
         <h2>Your Information:</h2>

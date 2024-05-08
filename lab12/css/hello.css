@@ -1,0 +1,16 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    background-color: #3399d4;
+    padding: 15px
+}
+
+button {
+    background-color: aquamarine;
+}
