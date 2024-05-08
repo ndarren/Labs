@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-<head></head>
+<head>
+    <script src="javascript/hello.js"></script>
+</head>
 
 <body>
     <h1>Hello!</h1>
@@ -8,12 +10,14 @@
         <label for="username">Username: </label>
         <input type="text" id="username" name="username"><br><br>
         <label for="password">Password:</label>
-        <input type="text" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
         <button type="button" onclick="displayLogin()">Submit</button>
     </form>
 
-    <div id="display">
-
+    <div id="displayInfo">
+        <h2>Your Infomration:</h2>
+        <p id="usernameDisplay"></p>
+        <p id="passwordDisplay"></p>
     </div>
 </body>
 
