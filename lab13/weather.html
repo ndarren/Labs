@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        const highTemp = [82, 75, 69, 69, 68];
+        const lowTemp = [55, 52, 52, 48, 51];
+        function printWeather() {
+            var highAvg, lowAvg, fiveDayAvg;
+            for (let i = 0; i < highTemp.length; i++) {
+                highAvg += highTemp[i];
+                lowAvg += lowTemp[i];
+                fiveDayAvg += lowTemp[i] + highTemp[i];
+            }
+            highAvg = highAvg / highTemp.length;
+            lowAvg = lowAvg / lowTemp.length;
+            fiveDayAvg = fiveDayAvg / (lowTemp.length + highTemp.length);
+            document.getElemendByID("highDisplay").innerhtml = "Average: " + 1;
+            document.getElemendByID("lowDisplay").innerhtml = "Average: " + lowAvg;
+            document.getElemendByID("avgDisplay").innerhtml = "Average: " + fiveDayAvg;
+            console.log(highAvg);
+            console.log(lowAvg);
+            console.log(fiveDayAvg);
+        }
+    </script>
+</head>
+
+<body onload="printWeather()">
+    <img src="weatherGraph.png">
+    <h3 id="highDisplay">High Average for 5 days: </h3>
+    <h3 id="lowDisplay">Low Average for 5 days: </h3>
+    <h3 id="avgDisplay">Average Temperature for 5 days: </h3>
+    <button onclick="printWeather()">Calculate Average</button>
+
+</body>
+
+</html>
