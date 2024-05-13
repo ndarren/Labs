@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 
 <head>
-    <script>
-        var state = "Idle";
-        var cmd = "nop"; // 'nop' stands for "no operation"
-        do {
-            switch (state) {
-                case "Idle":
-                    if (cmd === "run") {
-                        state = "S1";
-                    }
-                    break;
-                case "S1":
-                    if (cmd == "run") {
-                        state = "S2";
-                    } else if (cmd == "skip") {
-                        state = "S4";
-                    } else if (cmd == "next") {
-                        state = "S2";
-                    }
-                    break;
-                case "S2":
-                    if (cmd == "next") {
-                        state = "S3";
-                    }
-                    break;
-                case "S3":
-                    if (cmd == "next") {
-                        state = "S4";
-                    } else if (cmd == "home") {
-                        state = "Idle";
-                    }
-                    break;
-                case "S4":
-                    if (cmd == "next") {
-                        state = "S1";
-                    }
-                    break;
-            }
-            cmd = getUserInput(); // ... You'll be coding this func
-        } while (cmd != "exit");
-        function getUserInput() {
-            var cmd = prompt("Enter a command: " + state, "next");
-            return cmd;
-        }
-    </script>
+
 </head>
 
 <body>
-    <p>Press the button to submit</p>
-    <button onclick="getUserInput()">submit</button>
+
+    <h3 id="stateDisplay">Current State: Idle</h3>
+    <!DOCTYPE html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+            var state = "Idle";
+            var cmd = prompt("Enter a command: " + state, "next"); // 'nop' stands for "no operation"
+            do {
+                switch (state) {
+                    case "Idle":
+                        if (cmd === "run") {
+                            state = "S1";
+                        }
+                        document.getElementById("stateDisplay").innerHTML = "Current State: " + state;
+                        break;
+                    case "S1":
+                        if (cmd == "next") {
+                            state = "S2";
+                        } else if (cmd == "skip") {
+                            state = "S3";
+                        } else if (cmd == "prev") {
+                            state = "S4";
+                        }
+                        document.getElementById("stateDisplay").innerHTML = "Current State: " + state;
+                        break;
+                    case "S2":
+                        if (cmd == "next") {
+                            state = "S3";
+                        }
+                        document.getElementById("stateDisplay").innerHTML = "Current State: " + state;
+                        break;
+                    case "S3":
+                        if (cmd == "next") {
+                            state = "S4";
+                        } else if (cmd == "home") {
+                            state = "Idle";
+                        }
+                        document.getElementById("stateDisplay").innerHTML = "Current State: " + state;
+                        break;
+                    case "S4":
+                        if (cmd == "next") {
+                            state = "S1";
+                        }
+                        document.getElementById("stateDisplay").innerHTML = "Current State: " + state;
+                        break;
+                }
+                document.getElementById("stateDisplay").innerHTML = "Current State: " + state;
+                cmd = getUserInput(); // ... You'll be coding this func
+            } while (cmd != "exit");
+            if (cmd == "exit") {
+                state = "";
+            }
+
+            function getUserInput() {
+                var input = prompt("Enter a command: " + state, "next");
+                return input;
+            }
+        </script>
+        <h3 id="stateDisplay"></h3>
+
+    </body>
+
+
+    </html>
 </body>
+
 
 </html>
