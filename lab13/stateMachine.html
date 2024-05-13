@@ -41,12 +41,15 @@
             cmd = getUserInput(); // ... You'll be coding this func
         } while (cmd != "exit");
         function getUserInput() {
-            var cmd = prompt("ente")
+            var cmd = prompt("Enter a command: " + state, "next");
+            return cmd;
         }
     </script>
 </head>
 
 <body>
+    <p>Press the button to submit</p>
+    <button onclick="getUserInput()">submit</button>
 </body>
 
 </html>
