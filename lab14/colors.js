@@ -46,17 +46,17 @@ function fillArray() {
 
 function getColorSelector(id) {
     if (id == "OSU") {
-        return "#beavs";
+        return "beavs";
     } else if (id == "UO") {
-        return "#ducks";
+        return "ducks";
     } else if (id == "UW") {
-        return "#huskies";
+        return "huskies";
     } else if (id == "CAL") {
-        return "#oskies";
+        return "oskis";
     } else if (id == "SU") {
-        return "#trees";
+        return "trees";
     } else if (id == "WSU") {
-        return "#cougs";
+        return "cougs";
     }
     // Write a getColorSelector function that takes an ID parameter and 
     // returns the CSS selector to use for a particular school's row; 
@@ -65,7 +65,7 @@ function getColorSelector(id) {
 
 
 function fillRow(team) {
-    var i = document.querySelector("tbody");
+    var i = document.querySelector("tbody #" + getColorSelector(team.schoolID));
     var img = document.createElement('img');
     img.src = team.schoolLogoURL;
     var name = document.createElement('td');
@@ -90,10 +90,10 @@ function addTableRow(teamObj) {
     var table = document.getElementById("pac12-table");
     var tbody = table.querySelector("tbody");
     const row = document.createElement("tr");
-    row.id = teamObj.schoolID;
-    fillRow(teamObj);
-    row.id = getColorSelector();
+    row.id = getColorSelector(teamObj.schoolID);
     tbody.appendChild(row);
+    fillRow(teamObj);
+
 
     // Write an addTableRow function that takes a team object as its parameter; 
     // the function uses document.appendChild() to insert a new row to the 
