@@ -26,6 +26,45 @@
         <a href="ecwork.html">Extra-Curriculars</a>
         <a class="active" href="bio.html">About Me</a>
     </div>
+    <h2>About Me</h2>
+    <img class="pfp" src="media/20231018_125714.jpg">
+    <br>
+    <br>
+    <p>I am currently a 3rd year at UWB, studying Data Visualization with two minors in Computer Science and Data
+        Science. I am Vietnamese-American and fluent in both English and Vietnamese. My journey to UWB was initally in
+        pursuit of Computer Science so I do have a background in programming and the process.
+    </p>
+    <p>Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Praesent sit amet ex quis tortor convallis elementum
+        eget eu augue. Pellentesque tincidunt, ligula a malesuada ullamcorper, sem sapien imperdiet eros, eget posuere
+        neque risus nec quam. Nulla gravida vulputate arcu vitae tempor. Nulla facilisi. Aliquam mi libero, scelerisque
+        sit amet elit nec, efficitur lacinia mi. Nam ac porta purus. Nulla et libero dolor. Sed eu nibh aliquet, viverra
+        massa vestibulum, rhoncus nisl. </p>
+    <hr>
+    <div class="form">
+        <h3>Contact Me!</h3>
+        <form id="contact-form" method="POST" action="sendmail.php">
+            <div class="form-row form-error" style="display:none;"></div>
+            <div class="form-row">
+                <label for="contact-form-name">Name:</label>
+                <input id="contact-form-name" class="form-input" type="text" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="contact-form-email">Email:</label>
+                <input id="contact-form-email" class="form-input" type="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="contact-form-phone">Phone:</label>
+                <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+            </div>
+            <div class="form-row">
+                <label for="contact-form-message">Message:</label>
+                <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
 </body>
 
 </html>

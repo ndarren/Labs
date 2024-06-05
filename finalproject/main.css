@@ -81,6 +81,24 @@ div img {
     border: solid 2px;
 }
 
+.form {
+    display: block;
+    margin: 100px;
+
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-input {
+    display: block;
+}
+
+.form-error {
+    color: red;
+}
+
 /*Carousel*/
 .carousel-inner {
     margin-left: auto;
